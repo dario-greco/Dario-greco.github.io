@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dario Greco - Personal Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <style>
         /* CSS Reset and Base Styles */
         * {
@@ -12,10 +16,11 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
+            overflow-x: hidden;
         }
         .container {
             max-width: 1100px;
@@ -25,20 +30,26 @@
         
         /* Header Styles */
         header {
-            background: #333;
+            background: #1e3a8a;
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
         header h1 {
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
-        
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
         /* Navigation Styles */
         nav {
-            background: #444;
+            background: #1f2937;
             color: #fff;
-            padding: 0.5rem 0;
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         nav ul {
             list-style: none;
@@ -46,11 +57,16 @@
             justify-content: center;
         }
         nav ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #60a5fa;
         }
         
         /* Main Content Styles */
@@ -60,39 +76,50 @@
         section {
             background: #fff;
             margin-bottom: 2rem;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #333;
+            color: #1e3a8a;
             margin-bottom: 1rem;
+            font-size: 2rem;
         }
         
         /* Project and Article Styles */
         .project, .article {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
             padding: 1rem;
             margin-bottom: 1rem;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover, .article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
         }
         .project h3, .article h3 {
-            color: #444;
-            margin-bottom: 0.5rem;
+            color: #111827;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
         }
         
         /* Footer Styles */
         footer {
-            background: #333;
+            background: #1e3a8a;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             margin-top: 2rem;
         }
         footer a {
-            color: #fff;
+            color: #93c5fd;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #60a5fa;
         }
         
         /* Responsive Design */
@@ -102,7 +129,7 @@
                 align-items: center;
             }
             nav ul li {
-                margin: 5px 0;
+                margin: 10px 0;
             }
         }
     </style>
@@ -130,16 +157,13 @@
     <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p> Welcome to my website! My name is Dario and I am currently a MMATH Statistics student at the University of Waterloo. 
-                Previosuly I was at the University of Victoria where I got my BSc in Mathematics and Statistics.
-                Below I have some of my favourite projects which include work in betting, forecasting, and Kolmogorov complexity.
-            
-                Outside of academics I have been working as a painter (houses not landscapes) for the past four years, though I have sinced retired. Recently I
-                came back from a backpacking trip through Asia where I visted Japan, Vietnam, Cambodia, and Thailand. I am also very under the influence of the great books, articles, and movies 
+            <p>Welcome to my website! My name is Dario and I am currently an MMATH Statistics student at the University of Waterloo. 
+                Previously, I was at the University of Victoria where I got my BSc in Mathematics and Statistics.
+                Below I have some of my favourite projects, which include work in betting, forecasting, and Kolmogorov complexity.
+            </p>
+            <p>Outside of academics, I have been working as a painter (houses, not landscapes) for the past four years, though I have since retired. Recently, I
+                came back from a backpacking trip through Asia where I visited Japan, Vietnam, Cambodia, and Thailand. I am also very influenced by the great books, articles, and movies 
                 I've consumed throughout the years, some of which I have listed below.  
-                
-
-
             </p>
         </section>
 
@@ -147,11 +171,11 @@
             <h2>Projects</h2>
             <div class="project">
                 <h3>Kelly Criterion for Optimal Betting Size</h3>
-                <p>A comprehensive analysis of global climate trends using advanced statistical methods.</p>
+                <p>A comprehensive analysis of optimal betting strategies using advanced statistical methods.</p>
             </div>
             <div class="project">
                 <h3>Forecasting Bank of Canada's Commodity Price Index</h3>
-                <p>Developed a machine learning model to predict stock market trends based on historical data and current market indicators.</p>
+                <p>Developed a machine learning model to predict the Bank of Canada's commodity price index based on historical data and current market indicators.</p>
             </div>
         </section>
 
@@ -170,10 +194,9 @@
         <section id="reading">
             <h2>Current Reading List</h2>
             <ul>
-                <li><strong>"Incerto" by Nassim Taleb</strong>: A series of books on uncertainity, chance, and risk that had profound effect on my thinking processes.</li>
-                <li><strong>"American Prometheus" by Kai Bird and Martin Sherwin</strong>: A deep dive into the science, history, and politics of the Manhatten Project that puts into prosepective how far and significant science has become to the future of humanity.</li>
-                <li><strong>"Fermat's Last Theorem" by Simon Singh </strong>: An amusing historical and mathematical account of FMT. A must read for anyone with an ounce of interest in math. </li>
-                
+                <li><strong>"Incerto" by Nassim Taleb</strong>: A series of books on uncertainty, chance, and risk that had a profound effect on my thinking processes.</li>
+                <li><strong>"American Prometheus" by Kai Bird and Martin Sherwin</strong>: A deep dive into the science, history, and politics of the Manhattan Project that puts into perspective how significant science has become to the future of humanity.</li>
+                <li><strong>"Fermat's Last Theorem" by Simon Singh</strong>: An amusing historical and mathematical account of FMT. A must-read for anyone with an ounce of interest in math.</li>
             </ul>
         </section>
 
@@ -199,4 +222,5 @@
     </footer>
 </body>
 </html>
+
 
