@@ -31,10 +31,10 @@
         /* Header Styles */
         header {
     background-image: url('Escher_Day_and_Night_1938.jpg');
-    background-size: cover; /* Ensure the image covers the entire header */
+    background-size: 100%; /* Ensure the image covers the entire header */
     background-position: center; /* Center the image */
     color: #fff;
-    padding: 3rem 0; /* Adjust padding as needed */
+    padding: 6rem 0; /* Adjust padding as needed */
     text-align: center;
     position: relative;
 }
@@ -51,9 +51,17 @@ header::after {
     z-index: 1; /* Ensure the overlay is above the image */
 }
 
-header h1, header p {
+header h1 {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
+    font-size: 3rem;
+    
+}
+
+header p {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    font-size: 1rem;
     
 }
 
@@ -171,13 +179,14 @@ header h1, header p {
     <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my website! My name is Dario and I am currently an MMATH Statistics student at the University of Waterloo. 
+            <p>Welcome to my website, which is currently under construction! My name is Dario and I am currently an MMATH Statistics student at the University of Waterloo. 
                 Previously, I was at the University of Victoria where I got my BSc in Mathematics and Statistics.
                 Below I have some of my favourite projects, which include work in betting, forecasting, and Kolmogorov complexity.
             
                 Outside of academics, I have been working as a painter (houses, not landscapes) for the past four years, though I have since retired. Recently, I
                 came back from a backpacking trip through Asia where I visited Japan, Vietnam, Cambodia, and Thailand. I am also very influenced by the great books, articles, and movies 
-                I've consumed throughout the years, some of which I have listed below.  
+                I've consumed throughout the years, some of which I have listed below. My spare time consists of tennis matches, hiking, and conducting historical counterfactuals with friends (perferably over coffee or walking but never both).
+
             </p>
         </section>
 
@@ -187,13 +196,19 @@ header h1, header p {
                 <a href="https://github.com/dario-greco/Kelly-Criterion-/tree/main" target="_blank">
                     <h3>Kelly Criterion for Optimal Betting Size</h3>
                 </a>
-                <p>A comprehensive analysis of optimal betting strategies using advanced statistical methods.</p>
+                <p>A comprehensive analysis of optimal betting strategies, namely bet sizing, using the Kelly Criterion.</p>
             </div>
             <div class="project">
                 <a href="https://github.com/dario-greco/Time-Series-Project" target="_blank">
                     <h3>Forecasting Bank of Canada's Commodity Price Index</h3>
                 </a>
-                <p>Developed a machine learning model to predict the Bank of Canada's commodity price index based on historical data and current market indicators.</p>
+                <p> Applying ARMA models to Bank of Canada Commodity Data. </p>
+            </div>
+            <div class="project">
+                <a href="https://meetings.ams.org/math/jmm2023/meetingapp.cgi/Paper/20583" target="_blank">
+                    <h3>Kolmogorov Complexity</h3>
+                </a>
+                <p>Polymath Jr summer research project investigating the structure of infinite binary strings using Kolmogorov complexity</p>
             </div>
         </section>
 
@@ -210,7 +225,7 @@ header h1, header p {
         </section>
 
         <section id="reading">
-            <h2>Current Reading List</h2>
+            <h2>Reading List</h2>
             <ul>
                 <li><strong>"Incerto" by Nassim Taleb</strong>: A series of books on uncertainty, chance, and risk that had a profound effect on my thinking processes.</li>
                 <li><strong>"American Prometheus" by Kai Bird and Martin Sherwin</strong>: A deep dive into the science, history, and politics of the Manhattan Project that puts into perspective how significant science has become to the future of humanity.</li>
@@ -222,9 +237,9 @@ header h1, header p {
             <h2>Current Ponderings</h2>
             <p>Current areas of interest and research:</p>
             <ul>
-                <li>Meaning of life</li>
-                <li>Considering applications of statistical models (namely survival models) to problems in healthcare.</li>
-                
+                <li>The role of statistical thinking in machine learning</li>
+                <li>Applications of statistical models (namely survival models) to problems in biosciences and healthcare.</li>
+                <li>AI and the future workforce</li>
             </ul>
         </section>
     </main>
@@ -232,9 +247,9 @@ header h1, header p {
     <footer>
         <div class="container">
             <p>© 2024 Dario Greco. Connect with me on 
-                <a href="#">LinkedIn</a> | 
-                <a href="#">Twitter</a> | 
-                <a href="#">GitHub</a>
+                <a href="https://github.com/dario-greco">GitHub</a> |
+                <a href="#">Email: dariogreco21@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/darioagreco/">LinkedIn</a>  
             </p>
         </div>
     </footer>
