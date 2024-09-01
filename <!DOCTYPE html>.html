@@ -1,7 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Greco - Personal Portfolio</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Main Content Styles */
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        /* Project and Article Styles */
+        .project, .article {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .project h3, .article h3 {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Dario Greco</h1>
+            <p>Statistics | Tech | Finance</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#reading">Reading</a></li>
+                <li><a href="#thoughts">Thoughts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p> Welcome to my website! My name is Dario and I am currently a MMATH Statistics student at the University of Waterloo. 
+                Previosuly I was at the University of Victoria where I got my BSc in Mathematics and Statistics.
+                Below I have some of my favourite projects which include work in betting, forecasting, and Kolmogorov complexity.
+            
+                Outside of academics I have been working as a painter (houses not landscapes) for the past four years, though I have sinced retired. Recently I
+                came back from a backpacking trip through Asia where I visted Japan, Vietnam, Cambodia, and Thailand. I am also very under the influence of the great books, articles, and movies 
+                I've consumed throughout the years, some of which I have listed below.  
+                
+
+
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Kelly Criterion for Optimal Betting Size</h3>
+                <p>A comprehensive analysis of global climate trends using advanced statistical methods.</p>
+            </div>
+            <div class="project">
+                <h3>Forecasting Bank of Canada's Commodity Price Index</h3>
+                <p>Developed a machine learning model to predict stock market trends based on historical data and current market indicators.</p>
+            </div>
+        </section>
+
+        <section id="writing">
+            <h2>Writing</h2>
+            <div class="article">
+                <h3>A Review of my Commodity Forecast's</h3>
+                <p>An exploration of the forecasting ability of an undergrad statistics student.</p>
+            </div>
+            <div class="article">
+                <h3>Ethical Considerations in Big Data Analytics</h3>
+                <p>A discussion on the ethical implications of using big data in statistical analysis and decision-making processes.</p>
+            </div>
+        </section>
+
+        <section id="reading">
+            <h2>Current Reading List</h2>
+            <ul>
+                <li><strong>"Incerto" by Nassim Taleb</strong>: A series of books on uncertainity, chance, and risk that had profound effect on my thinking processes.</li>
+                <li><strong>"American Prometheus" by Kai Bird and Martin Sherwin</strong>: A deep dive into the science, history, and politics of the Manhatten Project that puts into prosepective how far and significant science has become to the future of humanity.</li>
+                <li><strong>"Fermat's Last Theorem" by Simon Singh </strong>: An amusing historical and mathematical account of FMT. A must read for anyone with an ounce of interest in math. </li>
+                
+            </ul>
+        </section>
+
+        <section id="thoughts">
+            <h2>Intellectual Pursuits</h2>
+            <p>Current areas of interest and research:</p>
+            <ul>
+                <li>Exploring the intersection of statistics and machine learning in predictive modeling</li>
+                <li>Considering applications of statistical models (namely survival models) to problems in healthcare</li>
+                <li>Pondering the philosophical implications of using AI in statistical research</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Dario Greco. Connect with me on 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">GitHub</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
+
