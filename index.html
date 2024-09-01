@@ -30,19 +30,32 @@
         
         /* Header Styles */
         header {
-            background: #178e7e;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
+    background-image: url('Escher_Day_and_Night_1938.jpg');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: #fff;
+    padding: 3rem 0; /* Adjust padding as needed */
+    text-align: center;
+    position: relative;
+}
+
+/* Optional: Dark overlay to improve text visibility */
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust the color and opacity of the overlay */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
 
         /* Navigation Styles */
         nav {
@@ -161,7 +174,7 @@
                 Previously, I was at the University of Victoria where I got my BSc in Mathematics and Statistics.
                 Below I have some of my favourite projects, which include work in betting, forecasting, and Kolmogorov complexity.
             
-            Outside of academics, I have been working as a painter (houses, not landscapes) for the past four years, though I have since retired. Recently, I
+                Outside of academics, I have been working as a painter (houses, not landscapes) for the past four years, though I have since retired. Recently, I
                 came back from a backpacking trip through Asia where I visited Japan, Vietnam, Cambodia, and Thailand. I am also very influenced by the great books, articles, and movies 
                 I've consumed throughout the years, some of which I have listed below.  
             </p>
