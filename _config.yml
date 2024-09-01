@@ -1,6 +1,6 @@
 title: My Personal Website
 description: A showcase of my projects, writing, and ideas
 theme: jekyll-theme-cayman  # Replace with your chosen theme
-url: https://dario-greco.github.io
+url: https://dario-greco.github.io/
 baseurl: ""  # Leave this empty unless your site is in a subdirectory
 
